@@ -17,6 +17,11 @@ class BlogController extends Controller
 				->published()
 				->paginate($this->limit);
 
-		return view("blog.index", compact('posts'));
+  	return view("blog.index", compact('posts'));
 	}
+
+  public function show(Post $post){
+
+  	return view("blog.show", compact('post'));
+  }
 }
