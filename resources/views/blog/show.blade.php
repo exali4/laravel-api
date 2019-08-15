@@ -35,7 +35,7 @@
      @endif
 
      <!-- Post Content -->
-     {{ $post->body }}
+     {!! $post->body_html !!}
 
      <hr>
 
